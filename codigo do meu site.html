@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Sites - Letzim</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F0F8FF; /* Fundo azul claro */
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #007BFF; /* Azul profissional */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            background-color: #E9ECEF; /* Cinza claro */
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #007BFF;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            background: linear-gradient(45deg, #007BFF, #0056B3);
+            color: white;
+        }
+        
+        nav a:hover {
+            background: linear-gradient(45deg, #0056B3, #004085);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #28A745; /* Verde para criatividade */
+        }
+        
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .service {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #E9ECEF;
+            border-radius: 5px;
+            background-color: #F8F9FA;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .service h3 {
+            color: #28A745;
+        }
+        
+        .discord-btn {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(45deg, #7289DA, #5B6EAE);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .discord-btn:hover {
+            background: linear-gradient(45deg, #5B6EAE, #4C5FD5);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        .discord-btn img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+        
+        /* Marca d'água */
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 200px; /* Tamanho enorme */
+            color: rgba(0, 123, 255, 0.3); /* Azul semi-transparente, mais nítido */
+            font-weight: bold;
+            z-index: -1; /* Atrás do conteúdo */
+            pointer-events: none; /* Não interfere com cliques */
+            user-select: none; /* Não selecionável */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Sombra para mais definição */
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .watermark {
+                font-size: 100px; /* Menor em telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Marca d'água -->
+    <div class="watermark">Letzim</div>
+    
+    <header>
+        <h1>Criação de Sites - Letzim</h1>
+        <p>Desenvolvo sites personalizados para você e seu negócio</p>
+    </header>
+    
+    <nav>
+        <a href="#about">Sobre Mim</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about" class="hero">
+            <img src="https://i.pinimg.com/736x/82/c6/9c/82c69cb4cf6316ad80946b768825dc61.jpg" alt="Foto de Letzim">
+            <h2>Olá, sou Letzim</h2>
+            <p>Sou um desenvolvedor web iniciante, mas muito bom no que faço. Apaixonado por transformar ideias em realidade digital, especializo-me em soluções personalizadas para empresas e indivíduos. Minha jornada começou com a curiosidade por tecnologia e evoluiu para uma carreira dedicada a ajudar negócios a prosperarem online. Utilizo as melhores práticas de design responsivo, otimização para SEO e integração de funcionalidades modernas, garantindo que cada projeto seja não apenas visualmente atraente, mas também eficiente e acessível em qualquer dispositivo. Seja você um empreendedor iniciando seu negócio ou uma empresa estabelecida buscando renovar sua presença digital, estou aqui para tornar isso possível com criatividade, dedicação e resultados comprovados.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Por Que Escolher Meus Serviços?</h2>
+            <p>Escolher meus serviços significa investir em qualidade, eficiência e suporte personalizado. Aqui estão algumas razões convincentes:</p>
+            <ul>
+                <li><strong>Preços Acessíveis:</strong> Ofereço pacotes econômicos de sites básicos a partir de R$ 30, tornando a presença online acessível para todos.</li>
+                <li><strong>Qualidade Garantida:</strong> Cada site é desenvolvido com atenção aos detalhes, utilizando tecnologias modernas para garantir responsividade, velocidade e segurança.</li>
+                <li><strong>Suporte Contínuo:</strong> Após a entrega, forneço manutenção e atualizações para que seu site continue funcionando perfeitamente.</li>
+                <li><strong>Experiência Personalizada:</strong> Trabalho de perto com você para entender suas necessidades e criar soluções que se alinhem exatamente ao seu negócio.</li>
+                <li><strong>Rapidez e Eficiência:</strong> Entregas rápidas sem comprometer a qualidade, ajudando você a ir ao ar o mais breve possível.</li>
+                <li><strong>Resultados Comprovados:</strong> Meus clientes veem aumento no engajamento e nas vendas graças a sites otimizados e atraentes.</li>
+            </ul>
+            <p>Não perca a oportunidade de elevar seu negócio online. Entre em contato hoje e vamos construir algo incrível juntos!</p>
+        </section>
+        
+        <section id="services" class="section">
+            <h2>Serviços Oferecidos</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Site Básico Simples</h3>
+                    <p>Site básico com 1-2 páginas, ideal para apresentações rápidas.</p>
+                    <p><strong>Preço: R$ 30</strong></p>
+                </div>
+                <div class="service">
+                    <h3>Site Básico Padrão</h3>
+                    <p>Site básico com até 5 páginas, incluindo formulários simples.</p>
+                    <p><strong>Preço: R$ 50</strong></p>
+                </div>
+                <div class="service">
+                    <h3>Site Básico Premium</h3>
+                    <p>Site básico avançado com até 10 páginas e integrações básicas.</p>
+                    <p><strong>Preço: R$ 80</strong></p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Visite Minha Loja no Discord</h2>
+            <p>Junte-se à nossa comunidade para discutir projetos, ver portfólio e adquirir serviços. Clique abaixo para acessar diretamente!</p>
+            <a href="https://discord.gg/bAux5ES6SF" class="discord-btn" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord Logo">
+                Entrar na Loja do Discord
+            </a>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contato</h2>
+            <p><a href="mailto:pikachuashkakashi@gmail.com">Gmail: pikachuashkakashi@gmail.com</a> | <a href="https://wa.me/5585921656134">WhatsApp: +55 85 92165-6134</a></p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Letzim. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
